@@ -1,0 +1,488 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.container{
+height: 100vh;
+}
+nav{
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    background-color: #0f0f0f;
+justify-content: space-between;
+align-items: center;
+/* position: fixed; */
+    height: 14vh;
+}
+
+nav ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    list-style-type: none;
+}
+nav ul li{
+   text-align: center;
+   position: relative;
+   display: inline-block;
+   list-style: none;
+}
+
+nav ul  li a{
+    display: block;
+    text-decoration: none;
+padding: 0.7rem;
+border-radius: 5px;
+color: #fff;
+font-size: 1rem;
+letter-spacing: 2px;
+font-family: "Urbanist", sans-serif;
+}
+nav ul li a:hover{
+    background-color: #3b518a;
+    color: #fff;
+    transition:  0.4s ease;
+}
+nav ul ul {
+    position: absolute;
+    z-index: 1000;
+    padding: 0.5rem;
+    display: none;
+    width: 180%;
+    background-color: #0f0f0f;
+}
+nav ul ul li a{
+    padding: 0.5rem;
+    color: #fff;
+font-size: 0.8rem;
+text-align: start;
+}
+nav ul ul li a:hover{
+    color: #fff;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+#homeli{
+    color: #3b518a;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0);
+}
+
+.logo{
+padding-left: 1rem;
+}
+.logo a{
+    width: 60%;
+}
+#acclogo{
+    width: 100%;
+}
+
+.container2{
+    height: auto;
+}
+.inforow{
+display: flex;
+margin: 1rem 0 1rem 0;
+gap: 5%;
+padding: 2rem;
+}
+.inforow .aboutimage{
+    padding: 3rem;
+    width: 50%;
+}
+.inforow .abouttext{
+    width: 60%;
+    padding: 2rem;
+}
+.inforow .abouttext h3{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #1b294e;
+    opacity: 0.8;
+    font-family: "Montserrat", sans-serif;
+}
+.inforow .abouttext h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+    color: #0f0f0f;
+    font-family: "Montserrat", sans-serif;
+}
+.inforow .abouttext h2 span{
+    color: #D2060F;
+}
+.inforow .abouttext p{
+    font-family: "Urbanist", sans-serif;
+    margin: 0.5rem 0;
+    opacity: 0.7;
+    font-size: 1.1rem;
+    letter-spacing: 0.2px;
+    line-height: 1.5rem;
+}
+#second{
+    margin-top: 2rem;
+}
+#abtimg{
+    width: 70%;
+    border-radius: 0.3rem;
+}
+.read-btn{
+    margin: 1rem 0;
+    background-color: #1b294e;
+    font-family: "Urbanist", sans-serif;
+    -webkit-appearance: none;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    border-radius: 7px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 0.7rem;
+    color: #fff;
+    -moz-appearance: none;
+}
+.read-btn:hover{
+    background-color: #D2060F;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.container3{
+    height: auto;
+    padding: 2rem;
+    background-color: #0f0f0f;
+    color: #fff;
+}
+.container3 h2{
+    padding: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+.cardrow{
+    display: flex;
+    padding: 2rem 5rem 2rem 5rem;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: #1b294e;
+}
+
+.card .img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.card .img img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card .caption{
+padding: 1rem;
+}
+.card .caption p{
+    font-size: 1.1rem;
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.container4{
+    height: 100vh;
+}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+  }
+
+.mySlides {
+    width: 100%;
+    z-index: 100;
+    height: 100%;
+}
+.mySlides img{
+    width: 100%;
+    height: 86vh;
+}
+  
+  /* Caption text */
+  .mySlides .text {
+    color: #fff;
+    height: 86vh;
+    background-color: rgba(0,0,0,0.75);
+    text-transform: capitalize;
+    font-size: 5rem;
+    cursor: default;
+    font-weight: 300;
+    text-shadow: 2px 2px rgb(199 200 205 / 37%);
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+    width: 100%;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    opacity: 0;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  img{
+    width: 100%;
+      z-index: -1;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: #0f0f0f;
+    height: auto;
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+}
+.fbox{
+    height: 50vh;
+display: flex;
+gap: 5%;
+justify-content: center;
+}
+.footer hr{
+    width: 90%;
+    margin: auto;
+}
+.aboutus{
+    padding: 1rem;
+    width: 15%;
+}
+.branch, .quicklinks, .follow{
+    width: 20%;
+    padding: 1rem;
+}
+#map{
+    width: 100%;
+}
+.aboutus h2, .branch h2, .quicklinks h2, .follow h2{
+    margin: 1rem 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.aboutus p, .branch p{
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.quicklinks ul{
+    list-style-type: none;
+}
+.quicklinks ul li{
+    margin: 0.5rem 0;
+}
+.quicklinks ul li a{
+
+    padding: 0.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.quicklinks ul li a:hover{
+    background-color: #3b518a;
+    color: #0f0f0f;
+    transition: 0.2s ease;
+}
+#fdiff{
+    color: #3b518a;
+}
+.follow ul {
+    list-style-type: none;
+}
+.follow ul li{
+    margin: 1rem 0;
+}
+.follow ul li a{
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#twitter:hover{
+    background-color: #00acee;
+    transition: 0.2s ease;
+    color: #fff;
+}
+#facebook:hover{
+    background-color: #4267B2;
+    transition: 0.2s ease;
+    color: #fff;
+}
+#instagram:hover{
+    background-image: linear-gradient(45deg , #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5 );
+    transition: 0.2s ease;
+    color: #fff;
+}
+
+footer .copy{
+    font-size: 0.7rem;
+    height: 5vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+}
+.already-visible {
+    transform: translateY(0);
+    animation: none;
+}
+  
+@keyframes come-in {
+    to { transform: translateY(0); }
+}
+
+
+
+
+
+.checkbtn{
+    font-size: 30px;
+    color: #D2060F;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.fa-bars::before{
+    content: "\f0c9";
+}
+
+
+
+@media all and (max-width: 880px){
+
+
+    .checkbtn{
+        display: block;
+    
+    }
+    .checkbtn{
+        padding-right: 20px;
+    }
+    #homeli{
+        background-color: rgba(0,0,0,0);
+    }
+    #drop{
+        display: none;
+        opacity: 0;
+    }
+    ul{
+        margin-top: 20px;
+    position: absolute;
+    height: 85vh;
+    z-index: 120;
+    background: #1b1b1b;
+    top: 12%;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    }
+    .list{
+        display: block;  
+        width: 100%;     
+    }
+
+    .list li{
+        width: 100%;
+
+        height: 2rem;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #fff;
+        margin-top: 20px;
+    }
+    .list li a:hover{
+        background-color: rgba(0,0,0,0);
+        transition: 0.2s ease;
+        color: #92E3A9;
+    }
+    .list li a{
+        font-size: 1rem;
+    }
+    nav ul li{
+        display: block;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all 0.5s ease-in;
+    
+    }
+    #check:checked ~ .checkbtn i::before{
+        content: "\f00d";
+    }
+    }

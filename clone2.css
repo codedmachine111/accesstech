@@ -1,0 +1,487 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.container{
+height: 100vh;
+background-image: url(./media/wallbg.png);
+background-position: center;
+background-size: cover;
+}
+nav{
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    background-color: rgba(0,0,0,0.6);
+justify-content: space-between;
+align-items: center;
+/* position: fixed; */
+    height: 14vh;
+}
+
+nav ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    list-style-type: none;
+}
+nav ul li{
+   text-align: center;
+   position: relative;
+   display: inline-block;
+   list-style: none;
+}
+
+nav ul  li a{
+    display: block;
+    text-decoration: none;
+padding: 0.7rem;
+border-radius: 5px;
+color: #fff;
+font-size: 1rem;
+letter-spacing: 2px;
+font-family: "Urbanist", sans-serif;
+}
+nav ul li a:hover{
+    background-color: #3b518a;
+    color: #fff;
+    transition:  0.4s ease;
+}
+nav ul ul {
+    position: absolute;
+    z-index: 1000;
+    padding: 0.5rem;
+    display: none;
+    width: 180%;
+    background-color: #0f0f0f;
+}
+nav ul ul li a{
+    padding: 0.5rem;
+    color: #fff;
+font-size: 0.8rem;
+text-align: start;
+}
+nav ul ul li a:hover{
+    color: #fff;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+#homeli{
+    color: #3b518a;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0);
+}
+
+.logo{
+padding-left: 1rem;
+}
+.logo a{
+    width: 60%;
+}
+#acclogo{
+    width: 100%;
+}
+.home{
+    height: 86vh;
+}
+.home .content{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .content .text{
+    width: 70%;
+    height: 50%;
+    padding: 2rem;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.4);
+    padding: 1.5rem;
+    box-shadow: 0 8px 39px 17px rgba(0,0,0,0.8);
+    text-align: center;
+}
+.home .content .text .title h2{
+color: #fff;
+text-shadow: 4px 4px rgb(19 10 15 / 75%);
+font-size: 4.5rem;
+text-transform: capitalize;
+letter-spacing: 3px;
+font-weight: 300;
+font-family: 'Montserrat', sans-serif;
+
+}
+.home .content .text .tagline p{
+    color: #fff;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 3px;
+font-weight: 300;
+}
+.dis-btn{
+    margin: 2rem 0;
+    background-color: transparent;
+    font-family: "Urbanist", sans-serif;
+    -webkit-appearance: none;
+    font-size: 1.1rem;
+    border-color: rgb(199 200 205 / 37%);
+    outline: none;
+    font-weight: 300;
+    border-radius: 7px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 0.7rem;
+    color: #fff;
+    -moz-appearance: none;
+}
+.dis-btn:hover{
+    color: #3b518a;
+    font-weight: bold;
+    transition: 0.3s ease;
+    background-color: #fff;
+    border-color: #0f0f0f;
+}
+.container2{
+    height: auto;
+}
+.inforow{
+display: flex;
+margin: 1rem 0 1rem 0;
+gap: 5%;
+padding: 2rem;
+}
+.inforow .aboutimage{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.inforow .abouttext{
+    width: 60%;
+    padding: 2rem;
+}
+.inforow .abouttext h3{
+    font-size: 1.5rem;
+    margin: 0.6rem 0;
+    color: #1b294e;
+    font-weight: 400;
+    opacity: 0.8;
+    font-family: "Montserrat", sans-serif;
+}
+.inforow .abouttext h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #0f0f0f;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+.inforow .abouttext h2 span{
+    color: #D2060F;
+}
+.inforow .abouttext p{
+    font-family: "Urbanist", sans-serif;
+    margin: 0.5rem 0;
+    opacity: 0.7;
+    font-size: 1.1rem;
+    letter-spacing: 0.2px;
+    line-height: 1.5rem;
+}
+.inforow .abouttext .btn{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#second{
+    margin-top: 2rem;
+}
+#abtimg{
+    width: 100%;
+    border-radius: 0.3rem;
+}
+.read-btn{
+    margin: 1rem 0;
+    background-color: #1b294e;
+    font-family: "Urbanist", sans-serif;
+    -webkit-appearance: none;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    border-radius: 7px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 0.7rem;
+    color: #fff;
+    -moz-appearance: none;
+}
+.read-btn:hover{
+    background-color: #D2060F;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.container3{
+    height: auto;
+    padding: 2rem;
+    background-color: #0f0f0f;
+    color: #fff;
+}
+.container3 h2{
+    padding: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+.cardrow{
+    display: flex;
+    padding: 2rem 5rem 2rem 5rem;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: #1b294e;
+}
+
+.card .img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.card .img img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card .caption{
+padding: 1rem;
+}
+.card .caption p{
+    font-size: 1.1rem;
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.container4{
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: #0f0f0f;
+    height: auto;
+    color: #fff;
+    font-family: "Urbanist", sans-serif;
+}
+.fbox{
+    height: 50vh;
+display: flex;
+gap: 5%;
+justify-content: center;
+}
+.footer hr{
+    width: 90%;
+    margin: auto;
+}
+.aboutus{
+    padding: 1rem;
+    width: 15%;
+}
+.branch, .quicklinks, .follow{
+    width: 20%;
+    padding: 1rem;
+}
+#map{
+    width: 100%;
+}
+.aboutus h2, .branch h2, .quicklinks h2, .follow h2{
+    margin: 1rem 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.aboutus p, .branch p{
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.quicklinks ul{
+    list-style-type: none;
+}
+.quicklinks ul li{
+    margin: 0.5rem 0;
+}
+.quicklinks ul li a{
+
+    padding: 0.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.quicklinks ul li a:hover{
+    background-color: #3b518a;
+    color: #fff;
+    transition: 0.2s ease;
+}
+#fdiff{
+    color: #3b518a;
+}
+.follow ul {
+    list-style-type: none;
+}
+.follow ul li{
+    margin: 1rem 0;
+}
+.follow ul li a{
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#twitter:hover{
+    background-color: #00acee;
+    transition: 0.2s ease;
+    color: #fff;
+}
+#facebook:hover{
+    background-color: #4267B2;
+    transition: 0.2s ease;
+    color: #fff;
+}
+#instagram:hover{
+    background-image: linear-gradient(45deg , #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5 );
+    transition: 0.2s ease;
+    color: #fff;
+}
+
+footer .copy{
+    font-size: 0.7rem;
+    height: 5vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+}
+.already-visible {
+    transform: translateY(0);
+    animation: none;
+}
+  
+@keyframes come-in {
+    to { transform: translateY(0); }
+}
+
+
+
+
+
+.checkbtn{
+    font-size: 30px;
+    color: #D2060F;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.fa-bars::before{
+    content: "\f0c9";
+}
+
+
+
+@media all and (max-width: 880px){
+
+
+    .checkbtn{
+        display: block;
+    
+    }
+    .checkbtn{
+        padding-right: 20px;
+    }
+    #homeli{
+        background-color: rgba(0,0,0,0);
+    }
+    #drop{
+        display: none;
+        opacity: 0;
+    }
+    ul{
+        margin-top: 20px;
+    position: absolute;
+    height: 85vh;
+    z-index: 120;
+    background: #1b1b1b;
+    top: 12%;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    }
+    .list{
+        display: block;  
+        width: 100%;     
+    }
+
+    .list li{
+        width: 100%;
+
+        height: 2rem;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #fff;
+        margin-top: 20px;
+    }
+    .list li a:hover{
+        background-color: rgba(0,0,0,0);
+        transition: 0.2s ease;
+        color: #92E3A9;
+    }
+    .list li a{
+        font-size: 1rem;
+    }
+    nav ul li{
+        display: block;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all 0.5s ease-in;
+    
+    }
+    #check:checked ~ .checkbtn i::before{
+        content: "\f00d";
+    }
+    }
